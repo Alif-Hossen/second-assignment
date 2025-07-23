@@ -129,6 +129,47 @@ body{
 
 
 
+/* PART THREE STYLE START */
+.three{
+    margin-bottom: 50px;
+}
+.plant-text{
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.plant-text p{
+    padding: 0 200px;
+    padding-top: 0px;
+    font-size: 28px;
+}
+.plant-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 18px;
+    margin-top: 50px;
+}
+.plant img{
+    width: 100%;
+}
+.plant p,h4{
+    text-align: center;
+    font-size: 25px;
+}
+.plant p{
+    padding-top: 0px;
+}
+.plant button{
+    width: 100%;
+    padding: 20px 10px;
+    background-color: rgba(233, 90, 8, 1);
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* PART THREE STYLE END */
+
+
 
 
 
@@ -185,6 +226,8 @@ body{
 
     }
 }
+/* THIRD PART */
+
 
 
 
