@@ -147,7 +147,7 @@ body{
 /* Responsive */
 
 /* Nav responsive */
-@media (max-width: 768px) {
+@media screen and (max-width: 576px) {
     .navbar {
         justify-content: space-between;
         padding: 10px 15px;
@@ -163,4 +163,28 @@ body{
         font-size: 15px; 
     }
 }
+
+/* second part */
+@media screen and (max-width: 576px) {
+    .banner{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        height: 100%;
+        margin-top: 0px;
+    }
+    .banner-text{
+        margin-top: 0%;
+        padding-left: 15px;
+    }
+    .banner-title{
+        font-size: 50px;
+    }
+    .banner-description{
+        font-size: 18px;
+
+    }
+}
+
+
 
