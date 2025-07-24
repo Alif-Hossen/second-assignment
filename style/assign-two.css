@@ -183,6 +183,9 @@
 
 .latest-section-title p{
     padding-top: -10px;
+    font-size: 30px;
+    padding-left: 15px;
+    padding-right: 150px;
 }
 
 /* IMAGE */
@@ -235,6 +238,9 @@
 }
 .bloom-plants-description a{
     color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+
 }
 
 
@@ -267,35 +273,41 @@
 }
 .ana-plants-description a{
     color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
 }
 
 .zabo-plants{
-    border: 3px solid black;
+    /* border: 3px solid black; */
     border-radius: 10px;
     position: relative;
     width: 75%;
     margin-left: 25px;
 }
-
-.zabo-plants-description h2{
+.zabo-plants-description{
     position: absolute;
     top: 30%;
-    left: 35%;
+    left: 12%;
+}
+
+.zabo-plants-description h2{
     padding-left: 50px;
-    transform: translate(-50%, -50%);
     color: white;
     font-size: 50px;
     padding-right: 0px;
 }
 .zabo-plants-description a{
     position: absolute;
-    top: 60%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 45px;
+    text-decoration: none;
+    border-bottom: 5px solid white;
 }
 
 .zabo-plants-img img{
-    border: 3px solid black;
+    /* border: 3px solid black; */
     width: 100%;
     height: 515px;
     border-radius: 30px;
@@ -475,6 +487,20 @@ footer{
 
 
 /* FIFTH PART ( -- LATEST DEALS-- ) */
+@media screen and (max-width:576px) {
+    .latest-section-title h1{
+        font-size: 30px;
+    }
+    .latest-section-title p{
+        font-size: 13px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .plant-section-bottom{
+        margin-top: 50px;
+    }
+
+}
 
 /* SIX PART */
 @media screen and (max-width: 576px){
@@ -529,6 +555,59 @@ footer{
         margin-top: 30px;
         margin-left: 18px;
     }
+    .plant-section-bottom{
+    gap: 0px;
+    margin-bottom: 120px;
+    }
+    .bloom-plants{
+        margin-left: 10px;
+    }
+    .bloom-plants-img img{
+        border-radius: 10px;
+
+    }
+    .bloom-plants-description a{
+        font-size: 8px;
+    }
+
+    .bloom-plants-description h2{
+        font-size: 10px;
+        color: white;
+    }
+     .ana-plants-img{
+        margin-left: 10px;
+     }
+     .ana-plants-img img{
+        border-radius: 10px;
+         margin-top: -15px;
+     }
+     .ana-plants-description{
+        top: 10%;
+     }
+     .ana-plants-description h2{
+        font-size: 10px;
+     }
+     .ana-plants-description a{
+        font-size: 8px;
+     }
+     .zabo-plants{
+        margin: 0 10px;
+     }
+     .zabo-plants img{
+        border-radius: 10px;
+        height: 100%;
+        margin-top: 2px;
+     }
+     .zabo-plants-description{
+        left: 2%;
+     }
+     .zabo-plants-description h2{
+        font-size: 20px;
+     }
+     .zabo-plants-description a{
+        font-size: 13px;
+        border-bottom: 2px solid white;
+     }
  }
 
 
