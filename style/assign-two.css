@@ -283,6 +283,9 @@
     left: 35%;
     padding-left: 50px;
     transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    padding-right: 0px;
 }
 .zabo-plants-description a{
     position: absolute;
@@ -298,12 +301,6 @@
     border-radius: 30px;
 }
 
-.zabo-plants-description h2{
-    color: white;
-    font-size: 50px;
-    padding-right: 0px;
-    /* padding-left: 200px; */
-}
 .zabo-plants-description a{
     color: white;
 }
