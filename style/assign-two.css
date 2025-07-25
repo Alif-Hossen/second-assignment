@@ -23,10 +23,6 @@
 }
 
 
-
-
-
-
 /* Shared Style */
 .regular-color{
     color: black;
@@ -37,8 +33,12 @@
 .colorful{
     color: rgba(233, 90, 8, 1);
 }
+/* shared style closed */
 
-
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; }
 
 .first{
     max-width: 1340px;
@@ -46,7 +46,7 @@
 }
 .navbar {
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     justify-content: space-between; 
     align-items: center;
     max-width: 1440px;
@@ -94,15 +94,10 @@
     /* font-weight: 0px; */
     /* font-size: 5p; */
 }
-/* .card-vallue{
-    font-size: 2px;
-} */
-
 .navbar .cart img {
     height: 20px;
     margin-right: 5px;
 }
-
 
 /* PART 2 */
 
@@ -110,23 +105,18 @@
     display: flex;
     justify-content: space-between;
     margin-top: 120px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 561px;
 }
 .banner-text{
     margin-top: 162px;
-    /* height: 300px; */
-    /* max-width: 570px; */
-    border: 1px solid black;
 } 
 .banner img{
     max-width: 670px;
     max-height: 455px;
     margin-top: 106px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
-
-
 
 
 /* PART THREE STYLE START */
@@ -170,15 +160,44 @@
 /* PART THREE STYLE END */
 
 
+/* PART FOUR STYLE START */
+.plants_lover{
+    display: flex;
+    gap: 20px;
+    margin-top: 200px;
+}
+.plants_image{
+    position: relative;
+}
+.plant_image_main img{
+    width: 600px;
+}
+.plants_conrner_image{
+    position: absolute;
+    top: -12%;
+    left: 80%;
+}
+.plants_image_description{
+    margin-left: 70px;
+}
+.plants_image_description li{
+    margin-left: 20px;
+    padding-top: 10px;
+    margin-top: 0px;
+}
+
+.plants_conrner_image img{
+    height: 200px;
+}
+
+/* PART FOUR STYLE END */
+
+
 /* PART FIVE STYLE START ( -- LATEST DEALS -- ) */
 
 .latest-section-title{
     text-align: center;
     margin-top: 50px;
-}
-
-.latest-section-title h1{
-    /* padding-top: 30px; */
 }
 
 .latest-section-title p{
@@ -217,6 +236,7 @@
     width: 100%;
     height: 100%;
     border-radius: 20px;
+    filter: brightness(0.5); 
 
 }
 .bloom-plants-description{
@@ -244,7 +264,6 @@
 }
 
 
-
 .ana-plants{
     /* border: 1px solid black; */
     position: relative;
@@ -266,6 +285,8 @@
     width: 100%;
     height: 100%;
     border-radius: 20px;
+    filter: brightness(0.5); 
+
 }
 .ana-plants-description h2{
     font-size: 25px;
@@ -311,6 +332,8 @@
     width: 100%;
     height: 515px;
     border-radius: 30px;
+    filter: brightness(0.5); 
+
 }
 
 .zabo-plants-description a{
@@ -400,21 +423,14 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Responsive */
+
+ @media screen and (max-width:576px) {
+    body{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+} 
 
 /* Nav responsive */
 @media screen and (max-width: 576px) {
@@ -448,10 +464,12 @@ footer{
         padding-left: 15px;
     }
     .banner-title{
-        font-size: 50px;
+        font-size: 40px;
+        padding-top: 30px;
     }
     .banner-description{
-        font-size: 18px;
+        font-size: 22px;
+        padding-top: 30px;
 
     }
 }
@@ -459,11 +477,12 @@ footer{
 @media screen and (max-width:576px) {
     
     .plant-text h1{
-        font-size: 50px;
+        font-size: 30px;
+        padding-top: 70px;
     }
     .plant-text p{
         padding: 0 50px;
-        padding-top: 0px;
+        padding-top: 30px;
         font-size: 20px;
         /* margin-top: 0px; */
     }
@@ -471,12 +490,17 @@ footer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin: 0px 10px;
+        margin-top: 50px;
     }
      .under p{
+        padding-top: 30px;
         margin-bottom: 3px;
      }
     .under h4{
         margin-top: 0px;
+    }
+    .under button{
+        margin-top: 40px;
     }
 
 
@@ -485,47 +509,126 @@ footer{
 
 /* FOUR PART */
 
+@media screen and (max-width:576px) {
+    .plants_lover{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 0px;
+    }
+    .plant_image_main img{
+        width: 100%;
+    }
+    .plants_image_description{
+        /* border: 1px solid black; */
+        margin-left: 0px;
+    }
+    .plants_image_description h1{
+        font-size: 30px;
+    }
+    .plants_image_description li{
+        margin-left: 0px;
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    .plants_conrner_image {
+        display: none;
+    }
+}
+
 
 /* FIFTH PART ( -- LATEST DEALS-- ) */
 @media screen and (max-width:576px) {
-    .latest-section-title h1{
-        font-size: 30px;
-    }
-    .latest-section-title p{
-        font-size: 13px;
-        padding-left: 40px;
-        padding-right: 40px;
-    }
+.latest-section-title h1{
+    font-size: 40px;
+    padding-top: 90px;
+}
+.latest-section-title p{
+    font-size: 20px ;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
     .plant-section-bottom{
+        display: flex;
+        flex-direction: column;
         margin-top: 50px;
     }
-
+    .plant-section-left .bloom-plants-img img{
+        border-radius: 20px;
+        width: 500px;
+    }
+    .bloom-plants .bloom-plants-description h2{
+        width: 500px;
+        padding-left: 80px;
+        font-size: 24px;
+    }
+    .bloom-plants .bloom-plants-description a{
+        margin-left: -30px;
+        font-size: 20px;
+        padding-top: 50px;
+        border-bottom: 2px solid white;
+    }
+    .ana-plants .ana-plants-description h2{
+        width: 500px;
+        padding-left: 80px;
+        font-size: 24px;
+        margin-top: 60px;
+    }
+    .ana-plants .ana-plants-description a{
+        margin-left: -40px;
+        font-size: 20px;
+        padding-top: 50px;
+        border-bottom: 2px solid white;
+    }
+    .plant-section-left .ana-plants-img img{
+        border-radius: 0px;
+        width: 500px;
+        margin-top: 4px;
+    }
+    .plant-section-bottom .zabo-plants img{
+        width: 500px;
+        margin-top: 20px;
+        border-radius: 30px ;
+    }
+    .plant-section-bottom .zabo-plants-description h2{
+        padding-left: 100px;
+        padding-right: -10px;
+        font-size: 24px;
+        padding-top: 30px;
+    }
+    .plant-section-bottom .zabo-plants-description a{
+        margin-left: 50px;
+        padding-right: -10px;
+        font-size: 20px;
+        padding-top: 80px;
+        border-bottom: 2px solid white;
+    }
 }
 
 /* SIX PART */
 @media screen and (max-width: 576px){
+    .part_six{
+        margin-top: -50px;
+    }
     .join-img img{
         width: 100%;
         height: 380px;
     }
-
-
-
     .join-h h1{
         position: absolute;
         top: 30%;
         left: 17%;
         color: white;
         font-size: 30px;
-
     }
     .join-input-button{
         position: absolute;
         top: 55%;
         left: 5%;
-        
     }
-
     .join-input-button input{
         height: 60px;
         width: 300px;
