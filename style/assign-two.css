@@ -111,6 +111,10 @@
 .banner-text{
     margin-top: 162px;
 } 
+.banner-description{
+    padding-top: 60px;
+    font-size: 30px;
+}
 .banner img{
     max-width: 670px;
     max-height: 455px;
@@ -126,6 +130,7 @@
 .plant-text{
     /* border: 1px solid black; */
     text-align: center;
+    padding-top: 90px;
 }
 .plant-text p{
     padding: 0 200px;
@@ -144,10 +149,15 @@
 .plant p,h4{
     text-align: center;
     font-size: 25px;
+    /* padding-top: 30px; */
 }
-.plant p{
+
+.under p{
+    padding-top: 30px;
+}
+/* .plant p{
     padding-top: 0px;
-}
+} */
 .plant button{
     width: 100%;
     padding: 20px 10px;
@@ -156,6 +166,8 @@
     color: white;
     font-size: 20px;
     font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 /* PART THREE STYLE END */
 
@@ -184,6 +196,7 @@
     margin-left: 20px;
     padding-top: 10px;
     margin-top: 0px;
+    font-size: 30px;
 }
 
 .plants_conrner_image img{
@@ -247,7 +260,7 @@
 }
 .bloom-plants-description a{
     position: absolute;
-    top: 100%;
+    top: 180%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -276,7 +289,7 @@
 }
 .ana-plants-description a{
     position: absolute;
-    top: 100%;
+    top: 180%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -319,7 +332,7 @@
 }
 .zabo-plants-description a{
     position: absolute;
-    top: 90%;
+    top: 180%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 45px;
@@ -525,11 +538,14 @@ footer{
     }
     .plants_image_description h1{
         font-size: 30px;
+        padding-top: 30px;
     }
     .plants_image_description li{
         margin-left: 0px;
         font-size: 20px;
         padding-left: 10px;
+        padding-top: 20px;
+        list-style-type: circle;
     }
     .plants_conrner_image {
         display: none;
@@ -578,9 +594,9 @@ footer{
         margin-top: 60px;
     }
     .ana-plants .ana-plants-description a{
-        margin-left: -40px;
+        top: 150%;
+        left: 43%;
         font-size: 20px;
-        padding-top: 50px;
         border-bottom: 2px solid white;
     }
     .plant-section-left .ana-plants-img img{
@@ -600,10 +616,9 @@ footer{
         padding-top: 30px;
     }
     .plant-section-bottom .zabo-plants-description a{
-        margin-left: 50px;
-        padding-right: -10px;
+        top: 170%;
+        left: 60%;
         font-size: 20px;
-        padding-top: 80px;
         border-bottom: 2px solid white;
     }
 }
