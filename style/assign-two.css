@@ -442,6 +442,7 @@ footer{
     body{
         margin-left: 10px;
         margin-right: 10px;
+        box-sizing: border-box;
     }
 } 
 
@@ -555,17 +556,17 @@ footer{
 
 /* FIFTH PART ( -- LATEST DEALS-- ) */
 @media screen and (max-width:576px) {
-.latest-section-title h1{
-    font-size: 40px;
-    padding-top: 90px;
-}
-.latest-section-title p{
-    font-size: 20px ;
-    text-align: center;
-    padding-left: 30px;
-    padding-right: 20px;
-    padding-top: 20px;
-}
+    .latest-section-title h1{
+        font-size: 40px;
+        padding-top: 90px;
+    }
+    .latest-section-title p{
+        font-size: 20px ;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
 
     .plant-section-bottom{
         display: flex;
@@ -610,13 +611,13 @@ footer{
         border-radius: 30px ;
     }
     .plant-section-bottom .zabo-plants-description h2{
-        padding-left: 100px;
+        padding-left: 50px;
         padding-right: -10px;
         font-size: 24px;
         padding-top: 30px;
     }
     .plant-section-bottom .zabo-plants-description a{
-        top: 170%;
+        top: 120%;
         left: 60%;
         font-size: 20px;
         border-bottom: 2px solid white;
